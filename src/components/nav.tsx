@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const tabs = [
+export const tabs = [
   {
     name: 'Rotation',
     path: '/rotation',

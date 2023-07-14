@@ -1,15 +1,11 @@
 import './globals.css';
-import {
-  Encode_Sans as Encode,
-  Mr_Dafoe as Dafoe,
-  Sigmar_One as Cabin_Sketch
-} from 'next/font/google';
+import { Encode_Sans as Encode, Mr_Dafoe as Dafoe } from 'next/font/google';
 import { Nav } from '@/components/nav';
 import Image from 'next/image';
+import { Credits } from '@/components/credits';
 
 const encode = Encode({ subsets: ['latin'] });
 const dafoe = Dafoe({ weight: '400', subsets: ['latin'] });
-const cabin = Cabin_Sketch({ weight: '400', subsets: ['latin'] });
 
 export default function RootLayout({
   children
@@ -56,7 +52,10 @@ export default function RootLayout({
           </div>
           <Nav />
         </div>
-        {children}
+        <main>
+          {children}
+          <Credits />
+        </main>
       </body>
     </html>
   );

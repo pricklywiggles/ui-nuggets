@@ -6,13 +6,11 @@ export default function Page() {
   const [toggler, setToggler] = React.useState(false);
 
   return (
-    <main className="">
-      <div className="bubble-button">
-        <button>
-          <span className="label">🎈</span>
-        </button>
-      </div>
-    </main>
+    <div className="bubble-button">
+      <button>
+        <span className="label">🎈</span>
+      </button>
+    </div>
   );
 }
 
