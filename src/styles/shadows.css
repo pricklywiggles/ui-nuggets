@@ -1,0 +1,8 @@
+.card {
+  margin: 0 auto;
+  width: 50%;
+  height: 33%;
+  border-radius: 1rem;
+  // white
+  background-color: hsl;
+}
